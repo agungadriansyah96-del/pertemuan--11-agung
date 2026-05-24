@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Sederhana</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: 300px;
+      }
+
+      input {
+        width: 90%;
+        padding: 10px;
+        margin: 10px 0;
+        font-size: 16px;
+      }
+
+      button {
+        padding: 10px 15px;
+        margin: 5px;
+        border: none;
+        background: #007bff;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #0056b3;
+      }
+
+      h3 {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Kalkulator Sederhana</h2>
+
+      <input type="number" id="angka1" placeholder="Masukkan angka pertama" />
+
+      <input type="number" id="angka2" placeholder="Masukkan angka kedua" />
+
+      <div>
+        <button onclick="hitung('+')">+</button>
+        <button onclick="hitung('-')">-</button>
+        <button onclick="hitung('*')">*</button>
+        <button onclick="hitung('/')">/</button>
+      </div>
+
+      <h3>Hasil: <span id="hasil">0</span></h3>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
